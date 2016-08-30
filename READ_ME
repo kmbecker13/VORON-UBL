@@ -9,3 +9,10 @@ There are currently two main folders:
 The ONLY changes between these two folders is the Configuration.h file, which has been changed for the different build areas.
 
 I have chosen to place all files in each folder to reduce confusion on how it should work.
+
+
+THINGS YOU SHOULD DO:
+1) Grab a copy of the entire Marlin folder for your printer
+2) Ensure your printer is NOT smaller than 228mm in XY for stock version and 300mm in XY for 12inch version.
+3) Load firmware, check functionality of G29 commands (see UBL documentation on Marlin's Github)
+4) Re-tune your extruder e-steps/mm, the default is 600 in the code i supply
