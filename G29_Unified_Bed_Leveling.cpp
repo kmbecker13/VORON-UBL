@@ -547,6 +547,18 @@ void gcode_G29() {
     j = (k - Unified_Bed_Leveling_EEPROM_start) / sizeof( bed_leveling_mesh.z_values );
 
     if ( Storage_Slot < 0 || Storage_Slot > j || Unified_Bed_Leveling_EEPROM_start <= 0) {
+      if (Storage_Slot < 0) {
+        SERIAL_PROTOCOLLNPGM("?Storage Slot less zero.\n");
+        goto LEAVE;
+      }
+      if (Storage_Slot > j) {
+        SERIAL_PROTOCOLLNPGM("?Storage Slot greater than j.\n");
+        goto LEAVE;
+      }
+      if (Unified_Bed_Leveling_EEPROM_start <= 0) {
+        SERIAL_PROTOCOLLNPGM("?UBL EEPROM less than zero.\n");
+        goto LEAVE;
+      }
       SERIAL_PROTOCOLLNPGM("?EEPROM storage not available for use.\n");
       goto LEAVE;
     }

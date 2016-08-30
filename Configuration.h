@@ -248,8 +248,8 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 260
-#define HEATER_1_MAXTEMP 260
+#define HEATER_0_MAXTEMP 270
+#define HEATER_1_MAXTEMP 270
 #define HEATER_2_MAXTEMP 260
 #define HEATER_3_MAXTEMP 260
 #define BED_MAXTEMP 125
@@ -545,7 +545,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // Probe Raise options provide clearance for the probe to deploy, stow, and travel.
 //
 #define Z_RAISE_PROBE_DEPLOY_STOW 13 // Raise to make room for the probe to deploy / stow
-#define Z_RAISE_BETWEEN_PROBINGS 8  // Raise between probing points.
+#define Z_RAISE_BETWEEN_PROBINGS 5  // Raise between probing points.
 
 //
 // For M851 give a range for adjusting the Z probe offset
@@ -632,7 +632,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 #define UNIFIED_BED_LEVELING_FEATURE    	// Enable Unified Bed Leveling.
 #define DEBUG_LEVELING_FEATURE
 #define UNIFIED_BED_LEVELING_GRID		// Enable the Grid Leveling portion of Unified Bed Leveling
-#define UNIFIED_BED_LEVELING_GRID_POINTS 5 	// Max size of the n x n grid to be probed
+#define UNIFIED_BED_LEVELING_GRID_POINTS 7 	// Max size of the n x n grid to be probed
 
 #if ENABLED(UNIFIED_BED_LEVELING_FEATURE)
   #define MESH_MIN_X X_MIN_POS
@@ -647,7 +647,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
   #define MANUAL_BED_LEVELING  // Add display menu option for bed leveling.
   
-  #define QUICK_ACCESS_TO_Z_BABY_STEPPING 65	// if this option is enabled and has a pin number defined on it,
+  #define QUICK_ACCESS_TO_Z_BABY_STEPPING 41	// if this option is enabled and has a pin number defined on it,
   						// it will give you immediate access to the Z-Baby-Stepping menu
 						// on the LCD Panel.   This is very nice when starting a print.  You
 						// need to have an LCD Panel enabled.  And you need to have a pin with
@@ -684,9 +684,9 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
   // Edge boundaries for Grid Based Mesh Leveling
   #define LEFT_PROBE_BED_POSITION 45
-  #define RIGHT_PROBE_BED_POSITION 260
+  #define RIGHT_PROBE_BED_POSITION 290
   #define FRONT_PROBE_BED_POSITION 45
-  #define BACK_PROBE_BED_POSITION 260
+  #define BACK_PROBE_BED_POSITION 290
 
   #if ENABLED(MANUAL_BED_LEVELING)
     #define MBL_Z_STEP 0.025  // Step size while manually probing Z axis.
