@@ -1,0 +1,11 @@
+Hello!  Welcome to the VORON Unified Bed Leveling firmware repo.  
+
+The files you find here are my attempt at merging VORON firmware with the new Marlin UBL Dev branch.
+
+There are currently two main folders:
+1) VORON_12inch_Volume <-- This is meant for my personal VORON with a 300 x 300 x 230mm build volume
+2) VORON_Stock_Volume <-- This is meant for those using a stock VORON build.
+
+The ONLY changes between these two folders is the Configuration.h file, which has been changed for the different build areas.
+
+I have chosen to place all files in each folder to reduce confusion on how it should work.
