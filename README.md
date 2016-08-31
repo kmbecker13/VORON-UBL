@@ -7,7 +7,7 @@ The files you find here are my attempt at merging VORON firmware with the new Ma
 
 <h3>There are currently two main folders:</h3>
 
-1) VORON_12inch_Volume <-- This is meant for my personal VORON with a 300 x 300 x 230mm build volume
+1) VORON_12inch_Volume <-- This is meant for my personal VORON with a 300 x 300 x 230mm build volume and has been tested with success.
 
 2) VORON_Stock_Volume <-- ***UNTESTED*** This is meant for those using a stock VORON build, but hasn't been tested fully (only difference is bed size)
 
