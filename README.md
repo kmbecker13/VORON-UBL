@@ -22,6 +22,6 @@ I have chosen to place all files in each folder to reduce confusion on how it sh
 
 2) Ensure your printer is NOT smaller than 228mm in XY for stock version and 300mm in XY for 12inch version.
 
-3) Load firmware, check functionality of G29 commands (see UBL documentation on Marlin's Github)
+3) Load firmware, check functionality of G29 commands (see UBL documentation on [Marlin's Github](https://github.com/MarlinFirmware/Marlin/tree/devel-ubl))
 
 4) Re-tune your extruder e-steps/mm, the default is 600 in the code i supply
