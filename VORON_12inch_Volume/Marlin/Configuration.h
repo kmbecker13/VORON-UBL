@@ -146,7 +146,7 @@
 
 // This defines the number of extruders
 // :[1,2,3,4]
-#define EXTRUDERS 1
+#define EXTRUDERS 2
 
 // For Cyclops or any "multi-extruder" that shares a single nozzle.
 //#define SINGLENOZZLE
@@ -217,7 +217,7 @@
 
 #define TEMP_SENSOR_0 5		// my printer had a shorted thermistor at the nozzle.  They over crimped the brass insert.
 				// The best replacement I had was a Type-5, so my firmware is different than Erik's and Roxy's.
-#define TEMP_SENSOR_1 0
+#define TEMP_SENSOR_1 5
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
 #define TEMP_SENSOR_BED 1
