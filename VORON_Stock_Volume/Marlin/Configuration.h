@@ -608,8 +608,8 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 225
-#define Y_MAX_POS 225
+#define X_MAX_POS 295
+#define Y_MAX_POS 295
 #define Z_MAX_POS 230
 
 //===========================================================================
@@ -635,12 +635,12 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 #define UNIFIED_BED_LEVELING_GRID_POINTS 7 	// Max size of the n x n grid to be probed
 
 #if ENABLED(UNIFIED_BED_LEVELING_FEATURE)
-  #define MESH_MIN_X X_MIN_POS
-  #define MESH_MAX_X X_MAX_POS
-  #define MESH_MIN_Y Y_MIN_POS
-  #define MESH_MAX_Y Y_MAX_POS
-  #define MESH_NUM_X_POINTS 7  // Don't use more than 15 points per axis
-  #define MESH_NUM_Y_POINTS 7
+  #define MESH_MIN_X X_MIN_POS + 40
+  #define MESH_MAX_X X_MAX_POS - 40
+  #define MESH_MIN_Y Y_MIN_POS + 40
+  #define MESH_MAX_Y Y_MAX_POS - 40
+  #define MESH_NUM_X_POINTS 6  // Don't use more than 15 points per axis
+  #define MESH_NUM_Y_POINTS 6
   #define MESH_HOME_SEARCH_Z 4  // Z after Home, bed somewhere below but above 0.0.
 
   //#define MESH_G28_REST_ORIGIN // After homing all axes ('G28' or 'G28 XYZ') rest at origin [0,0,0]
