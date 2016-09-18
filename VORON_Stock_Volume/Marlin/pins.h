@@ -145,8 +145,8 @@
   #include "pins_MKS_13.h"
 #elif MB(SAINSMART_2IN1)
   #include "pins_SAINSMART_2IN1.h"
-#elif MB(BOARD_RAMPS_14_VORON)
-  #include "pins_RAMPS_14_VORON.h"
+#elif MB(RAMPS_14_VORON)
+  #include "pins_RAMPS_14_VORON.h"  
 #else
   #error "Unknown MOTHERBOARD value set in Configuration.h"
 #endif
