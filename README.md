@@ -5,6 +5,9 @@ Hello!  Welcome to the VORON Unified Bed Leveling firmware repo.
 
 The files you find here are my attempt at merging VORON firmware with the new Marlin UBL Dev branch.
 
+<h3>**Update**</h3>
+UBL 2.0 was released and the firmware here has also been updated, but still needs to be tested.
+
 <h3>There are currently two main folders:</h3>
 
 1) VORON_12inch_Volume <-- This is meant for my personal VORON with a 300 x 300 x 230mm build volume and has been tested with success.
